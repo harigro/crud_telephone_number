@@ -1,6 +1,6 @@
 <?php $this->layout('layout') ?>
 
-<h1>Daftar Belanja</h1>
+<h1>Daftar Nomor Telepon</h1>
 <button class="btn btn-primary my-3" data-bs-toggle="modal" data-bs-target="#modalTambah">Tambah Item</button>
 
 <table class="table table-bordered">
