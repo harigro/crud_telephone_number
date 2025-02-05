@@ -1,0 +1,23 @@
+{
+    "name": "yuhari/crud_nomor_telepon",
+    "description": "Aplikasi managemen nomor telepon menggunakan program crud dan kerangka kerja flight.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Apps\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "harigro",
+            "email": "trierbank@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "mikecao/flight": "^3.13",
+        "vlucas/phpdotenv": "^5.6",
+        "league/plates": "^3.6"
+    }
+}
