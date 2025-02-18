@@ -13,7 +13,7 @@ Flight::set('TelephoneController', new TelephoneController());
 Flight::route('GET /', [TelephoneController::class, 'index']);
 
 // rute simpan
-Flight::route('POST /store', function() {
+Flight::route('POST /data/simpan', function() {
     Flight::get('TelephoneController')->storePhone(Flight::request(), fn() => Flight::redirect('/'));
 });
 
