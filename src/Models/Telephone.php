@@ -38,7 +38,7 @@ class Telephone {
         try {
             $this->db->beginTransaction();
 
-            $stmt = $this->db->prepare("UPDATE mahasiswa SET nama = :nama_person, telepon = :nomor_telepon WHERE id = :id");
+            $stmt = $this->db->prepare("UPDATE kontak SET nama = :nama_person, telepon = :nomor_telepon WHERE id = :id");
             $stmt->execute([
                 ':id' => $id,
                 ':nama_person' => $nama,
