@@ -53,13 +53,13 @@ Aplikasi CRUD untuk mengelola data nomor telepon menggunakan Flight PHP sebagai 
 1. Clone repositori ini ke direktori lokal:
    
    ```bash
-   git clone https://github.com/harigro/crud_mahasiswa.git
+   git clone https://github.com/harigro/crud_telephone_number.git
    ```
 
 2. Masuk ke direktori proyek:
    
    ```bash
-   cd crud_mahasiswa
+   cd crud_telephone_number
    ```
 
 3. Jalankan Composer untuk menginstal dependensi:
@@ -95,7 +95,7 @@ Untuk mengarahkan semua permintaan ke `public/index.php`, buat file `.htaccess` 
 
 ## Pengarahan ke 404
 
-Jika ada inputan yang kosong atau tidak valid, aplikasi akan mengarahkan pengguna ke halaman 404. Anda bisa mengonfigurasi pengecekan input di controller dan memastikan aplikasi mengarah ke `views/belanja/404.php` jika ada kesalahan.
+Jika ada inputan yang kosong atau tidak valid, aplikasi akan mengarahkan pengguna ke halaman 404. Anda bisa mengonfigurasi pengecekan input di controller dan memastikan aplikasi mengarah ke `Views/telephone/404.php` jika ada kesalahan.
 
 ## Lisensi
 
