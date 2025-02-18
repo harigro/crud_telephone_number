@@ -19,16 +19,16 @@
         <tbody>
             <?php foreach ($items as $item): ?>
                 <tr>
-                    <td><?= $item['id'] ?></td>
-                    <td><?= $item['nama'] ?></td>
-                    <td><?= $item['telepon'] ?></td>
+                    <td><?= $this->escape($item['id']) ?></td>
+                    <td><?= $this->escape($item['nama']) ?></td>
+                    <td><?= $this->escape($item['telepon']) ?></td>
                     <td><?= $item['created_at'] ?></td>
                     <td>
                         <div class="d-flex gap-2">
                             <div class="me-2">
-                                <input style="display:none;" class="data-id" value="<?= $item['id'] ?>">
-                                <input style="display:none;" class="data-nama" value="<?= $item['nama'] ?>">
-                                <input style="display:none;" class="data-telepon" value="<?= $item['telepon'] ?>">
+                                <input style="display:none;" class="data-id" value="<?= $this->escape($item['id']) ?>">
+                                <input style="display:none;" class="data-nama" value="<?= $this->escape($item['nama']) ?>">
+                                <input style="display:none;" class="data-telepon" value="<?= $this->escape($item['telepon']) ?>">
                                 <button type="submit" class="btn btn-secondary px-3 py-2 bahrui-data"
                                     data-bs-toggle="modal" data-bs-target="#modalEdit">Edit Data</button>
                             </div>
