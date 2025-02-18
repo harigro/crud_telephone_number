@@ -17,9 +17,14 @@ Flight::route('POST /data/simpan', function() {
     Flight::get('TelephoneController')->storePhone(Flight::request(), fn() => Flight::redirect('/'));
 });
 
+// rute hapus
 Flight::route('POST /data/hapus', function() {
     Flight::get('TelephoneController')->deletePhone(Flight::request(), fn() => Flight::redirect('/'));
 });
 
+// rute edit
+Flight::route('POST /data/edit', function() {
+    Flight::get('TelephoneController')->EditPhone(Flight::request(), fn() => Flight::redirect('/'));
+});
 
 Flight::start();
