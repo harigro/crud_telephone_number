@@ -21,9 +21,11 @@ Aplikasi CRUD untuk mengelola data nomor telepon menggunakan Flight PHP sebagai 
 │   │   ├── Telephone.php
 │   ├── /Views
 │   │   ├── telephone
+│   │   │   /modal
+│   │   │   │   ├── edit_data.php
+│   │   │   │   ├── tambah_data.php
 │   │   │   ├── index.php
 │   │   │   ├── 404.php
-│   │   │   ├── form.php
 │   │   │   ├── list.php
 │   ├── config.php
 │   ├── registrasi.php
@@ -38,7 +40,7 @@ Aplikasi CRUD untuk mengelola data nomor telepon menggunakan Flight PHP sebagai 
 2. **Tampilkan Nomor Telepon** - Menampilkan daftar nomor telepon yang telah tersimpan.
 3. **Update Nomor Telepon** - Mengubah data nomor telepon yang ada.
 4. **Hapus Nomor Telepon** - Menghapus nomor telepon dari daftar.
-5. **Registarsi Pengguna** - Mendaftarkan diri jika ingin mengakses aplikasi.
+5. **Pencegahan Dari Serangan XSS** - Memberikan perlindunan dari serangan xss.
 
 ## Persyaratan
 

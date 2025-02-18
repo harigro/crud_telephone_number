@@ -26,7 +26,7 @@ class TelephoneController {
             $telepon = trim($_POST['telepon'] ?? '');
     
             if ($nama === '' || $telepon === '') {
-                echo $this->templates->render('Telephone/404');
+                echo $this->templates->render('telephone/404');
             } else {
                 $this->telephone->create($nama, $telepon);
             $redirectTo();
@@ -34,14 +34,19 @@ class TelephoneController {
         }
     }
 
-    // hapus data
+    // edit data
     public function editPhone(mixed $request, callable $redirectTo): void {
         if ($request->method === "POST") {
             $id = $_POST['id'];
-            $nama = $_POST['nama'];
-            $telepon = $_POST['telepon'];
-            $this->telephone->edit($id, $nama, $telepon);
-            $redirectTo();
+            $nama = trim($_POST['nama'] ?? '');
+            $telepon = trim($_POST['telepon'] ?? '');
+
+            if ($nama === '' || $telepon === '') {
+                echo $this->templates->render('telephone/404');
+            } else {
+                $this->telephone->edit($id, $nama, $telepon);
+                $redirectTo();
+            }
         }
     }
     
