@@ -32,11 +32,12 @@ class TelephoneController {
         }
     }
     
-    
-    public function deletePhone(string $id): void {
-        $this->telephone->delete($id);
-        header("Location: index.php");
-        exit;
+    public function deletePhone(mixed $request, callable $redirectTo): void {
+        if ($request->method === "POST") {
+            $id = $_POST['id'];
+            $this->telephone->delete($id);
+            $redirectTo();
+        }
     }
     
 }

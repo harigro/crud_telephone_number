@@ -22,7 +22,7 @@ class Telephone {
     }
 
     public function delete($id) {
-        $stmt = $this->db->prepare("DELETE FROM belanja WHERE id = ?");
+        $stmt = $this->db->prepare("DELETE FROM kontak WHERE id = ?");
         return $stmt->execute([$id]);
     }
 }

@@ -17,9 +17,9 @@ Flight::route('POST /data/simpan', function() {
     Flight::get('TelephoneController')->storePhone(Flight::request(), fn() => Flight::redirect('/'));
 });
 
-// Flight::route('POST /data/mahasiswa/store', function() {
-//     Flight::get('mahasiswaController')->storeMahasiswa(fn() => Flight::redirect('/'), Flight::request());
-// });
+Flight::route('POST /data/hapus', function() {
+    Flight::get('TelephoneController')->deletePhone(Flight::request(), fn() => Flight::redirect('/'));
+});
 
 
 Flight::start();
