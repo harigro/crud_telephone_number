@@ -28,11 +28,11 @@
                             <div class="me-2">
                                 <input style="display:none;" class="data-id" value="<?= $item['id'] ?>">
                                 <input style="display:none;" class="data-nama" value="<?= $item['nama'] ?>">
-                                <input style="display:none;" class="data-nim" value="<?= $item['telepon'] ?>">
+                                <input style="display:none;" class="data-telepon" value="<?= $item['telepon'] ?>">
                                 <button type="submit" class="btn btn-secondary px-3 py-2 bahrui-data"
-                                    data-bs-toggle="modal" data-bs-target="#modalBahrui">Edit Data</button>
+                                    data-bs-toggle="modal" data-bs-target="#modalEdit">Edit Data</button>
                             </div>
-                            <form class="ms-2" method="POST" action="./data/mahasiswa/delete">
+                            <form class="ms-2" method="POST" action="./data/hapus">
                                 <input type="hidden" name="id" value="<?= $item['id'] ?>">
                                 <button type="submit" class="btn btn-danger px-3 py-2">Hapus</button>
                             </form>
@@ -48,4 +48,5 @@
         <p>&copy; 2025 Data Telephone</p>
     </div>
 </footer>
-<?php $this->insert('telephone/modal/modal_tambah_data'); ?>
+<?php $this->insert('telephone/modal/tambah_data'); ?>
+<?php $this->insert('telephone/modal/edit_data'); ?>
