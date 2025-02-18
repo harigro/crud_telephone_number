@@ -1,11 +1,11 @@
-# CRUD Aplikasi Nomor Telepon dengan Flight PHP & Plates
+# CRUD Mahasiwa dengan Flight PHP & Plates
 
 Aplikasi CRUD untuk mengelola data nomor telepon menggunakan Flight PHP sebagai framework backend dan Plates sebagai template engine. Aplikasi ini menggunakan arsitektur Model-View-Controller (MVC) dan Bootstrap 5.3.3 untuk tampilan frontend.
 
 ## Struktur Direktori
 
 ```markdown
-/belanja-crud
+/crud_mahasiswa
 ├── /public
 │   ├── index.php
 │   ├── .htaccess
@@ -26,6 +26,7 @@ Aplikasi CRUD untuk mengelola data nomor telepon menggunakan Flight PHP sebagai 
 │   │   │   ├── form.php
 │   │   │   ├── list.php
 │   ├── config.php
+│   ├── registrasi.php
 │   ├── Database.php
 ├── /vendor
 ├── composer.json
@@ -37,6 +38,7 @@ Aplikasi CRUD untuk mengelola data nomor telepon menggunakan Flight PHP sebagai 
 2. **Tampilkan Nomor Telepon** - Menampilkan daftar nomor telepon yang telah tersimpan.
 3. **Update Nomor Telepon** - Mengubah data nomor telepon yang ada.
 4. **Hapus Nomor Telepon** - Menghapus nomor telepon dari daftar.
+5. **Registarsi Pengguna** - Mendaftarkan diri jika ingin mengakses aplikasi.
 
 ## Persyaratan
 
@@ -49,13 +51,13 @@ Aplikasi CRUD untuk mengelola data nomor telepon menggunakan Flight PHP sebagai 
 1. Clone repositori ini ke direktori lokal:
    
    ```bash
-   git clone https://github.com/harigro/crud_telephone_number.git
+   git clone https://github.com/harigro/crud_mahasiswa.git
    ```
 
 2. Masuk ke direktori proyek:
    
    ```bash
-   cd crud_telephone_number
+   cd crud_mahasiswa
    ```
 
 3. Jalankan Composer untuk menginstal dependensi:
@@ -63,6 +65,7 @@ Aplikasi CRUD untuk mengelola data nomor telepon menggunakan Flight PHP sebagai 
    ```bash
    composer install
    ```
+   * jika terjadi kesalahan dalam menginstalsi dependensi, solusinya hapus folder vendor dan composer.lock lalu jalanakan perintah
 
 4. Pastikan konfigurasi database sudah benar di `src/config.php`.
 

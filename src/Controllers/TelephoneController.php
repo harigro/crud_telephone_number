@@ -1,7 +1,7 @@
 <?php
 namespace Apps\Controllers;
 
-use Flight;
+
 use Apps\Models\Telephone;
 use League\Plates\Engine;
 
@@ -18,8 +18,8 @@ class TelephoneController {
         echo $this->templates->render('telephone/index', ['items' => $this->telephone->getAll()]);
     }
 
-    public function store(callable $redirectTo): void {
-        if (Flight::request()->method === "POST") {
+    public function storePhone(mixed $request, callable $redirectTo): void {
+        if ($request->method === "POST") {
             $nama = trim($_POST['nama'] ?? '');
             $telepon = trim($_POST['telepon'] ?? '');
     
@@ -33,7 +33,7 @@ class TelephoneController {
     }
     
     
-    public function delete(string $id): void {
+    public function deletePhone(string $id): void {
         $this->telephone->delete($id);
         header("Location: index.php");
         exit;
